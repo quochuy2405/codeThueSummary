@@ -74,6 +74,7 @@ function renderByJSON(products) {
 }
 
 $(document).ready(function () {
+
     // refer https://api.jquery.com/jquery.getjson/ 
     $.getJSON("data.json", function (data) {
         const render = $("#render-products");
@@ -123,6 +124,19 @@ $(document).ready(function () {
         $('#total').val(0)
         listId = []
         total = 0
+        $('.item-product').css("background", "none");
+    })
+    $("#privacy").change(function () {
+        console.log($(this).is(':checked'))
+        if (!$(this).is(':checked')) {
+            $('#btn-submit').prop('disabled', true)
+            $('#btn-submit').css('background-color', '#cbcbcb')
+        }
+        else {
+            $('#btn-submit').prop('disabled', false);
+            $('#btn-submit').css('background-color', '#294286')
+        }
+
     })
 
     $("#form").on("submit", function (e) {
