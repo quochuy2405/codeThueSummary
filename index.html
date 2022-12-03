@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="module" src="./scripts/jquery-3.6.1.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <form id="form" method="get" action="summary.html">
+            <h2 class="title">
+                Information Form
+            </h2>
+
+            <div class="input-form required">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <span class="alert" id="nameError"></span>
+            </div>
+
+            <div class="input-form required">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+                <span class="alert" id="addressError"></span>
+            </div>
+
+            <div class="input-group">
+                <div class="input-form required w-40">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age">
+                    <span class="alert" id="ageError"></span>
+                </div>
+                <div class="input-form required w-40">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                    <span class="alert" id="dateError"></span>
+                </div>
+            </div>
+
+            <div class="input-form w-40">
+                <p>Color</p>
+                <div class="radio-group">
+                    <label class="input-radio">
+                        <input checked type="radio" name="color" value="red">
+                        <p>Red</p>
+                    </label>
+                    <label class="input-radio">
+                        <input type="radio" name="color" value="blue">
+                        <p>Blue</p>
+                    </label>
+                    <label class="input-radio">
+                        <input type="radio" name="color" value="purple">
+                        <p>Purple</p>
+                    </label>
+                    <label class="input-radio">
+                        <input type="radio" name="color" value="black">
+                        <p>Black</p>
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="input-checkbox">
+
+                <input type="checkbox" name="privacy">
+                <label>Sale is not refunds</label>
+            </div>
+
+            <div class="input-form w-40">
+                <label for="total">You total ($CAD)</label>
+                <input type="number" id="total" name="total" readonly>
+                <span class="alert" id="totalError"></span>
+            </div>
+
+            <div class="group-buttons">
+                <button id="btn-submit" type="submit">
+                    <p>Submit</p>
+                </button>
+                <button id="btn-reset" type="reset">
+                    <p>Reset</p>
+                </button>
+            </div>
+
+            <p>You can choose any item for...</p>
+            <div id="table-product">
+                <div class="grid-5">
+                    <p>Item</p>
+                    <p>Name</p>
+                    <p>Value</p>
+                    <p>Amount</p>
+                    <p>Sub Total</p>
+                </div>
+                <div id="render-products">
+
+                </div>
+
+
+
+            </div>
+
+        </form>
+
+    </div>
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>

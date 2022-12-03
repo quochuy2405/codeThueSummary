@@ -1,0 +1,32 @@
+{
+	"products": [
+		{
+			"id": "black_tee",
+			"name": "Black Tee",
+			"url": "./images/black_tee.png",
+			"value": "200",
+			"amount": "2"
+		},
+		{
+			"id": "blue_tee",
+			"name": "Blue Tee",
+			"url": "./images/blue_tee.png",
+			"value": "210",
+			"amount": "2"
+		},
+		{
+			"id": "red_tee",
+			"name": "Red Tee",
+			"url": "./images/red_tee.png",
+			"value": "220",
+			"amount": "2"
+		},
+		{
+			"id": "purple_tee",
+			"name": "Purple Tee",
+			"url": "./images/purple_tee.png",
+			"value": "199",
+			"amount": "2"
+		}
+	]
+}
