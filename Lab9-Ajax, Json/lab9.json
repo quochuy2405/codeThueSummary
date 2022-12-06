@@ -1,0 +1,38 @@
+{
+    "Category" : "WorldCup Teams",
+    "Place" : "Quatar",
+    "year" : 2022,
+    "month" : "November",
+    "teams" : [
+{      
+        "name" : "NeitherLands",
+        "year" : 2022,
+        "Group" : "Group A",
+        "Playes" : [
+          "Remko Pasveer",
+          "Andries Noppert",
+          "Justin Bijlow"
+        ]
+      },
+{      
+        "name" : "Japan",
+        "year" : 2022,
+        "Group" : "Group B",
+        "Playes" : [
+          "Eiji Kawashima",
+          "Shuichi Gonda ",
+          "Daniel Schmidt"
+        ]
+      },
+{   
+       "name" : "Korea",
+        "year" : 2022,
+        "Group" : "Group C",
+        "Playes" : [
+          "Kim Seung-gyu",
+          " Song Bum-keun ",
+          "Yoon Jong-gyu "
+        ]
+      }
+    ]
+  }

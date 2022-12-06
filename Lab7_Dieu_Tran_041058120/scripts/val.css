@@ -1,0 +1,13 @@
+/* form styles */
+.alert {
+  color: red;
+}
+h3 {
+  font-weight: 900px;
+  font-size: xx-large;
+  text-transform: uppercase;
+  
+  font-style: normal;
+  color: rgb(212, 121, 25);
+  text-align: center;
+}
