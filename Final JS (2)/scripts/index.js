@@ -118,7 +118,7 @@ $(document).ready(function () {
         const parent = $(this).parent().parent()
         if ($(this).text() !== 'done') {
           const amountItem = parent.find("[data-amount]")
-          amountItem.html(`<input type="number" >`)
+          amountItem.html(`<input type="number" value=1 min=1 max=100 >`)
           $(this).html('done')
         } else {
           const input = parent.find("[data-amount]").find('input')
@@ -148,6 +148,7 @@ $(document).ready(function () {
           parent.css("background", "#98b4c8");
           total += Number(totalItem);
           $("#total").val(total);
+          $(this).html('undo')
 
           listId.push(id);
           card.push(item);
@@ -160,6 +161,7 @@ $(document).ready(function () {
             total -= Number(totalItem);
             $("#total").val(total);
           }
+          $(this).html('choose')
           localStorage.setItem("shoppingCard", JSON.stringify(newCard));
         }
       });
