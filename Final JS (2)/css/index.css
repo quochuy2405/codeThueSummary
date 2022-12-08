@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	box-sizing: border-box;
 }
 
@@ -41,13 +41,13 @@ p {
 	border-radius: 5px;
 	padding: 0 10px;
 }
-.input-form input[type='radio'],
-input[type='checkbox'] {
+.input-form input[type="radio"],
+input[type="checkbox"] {
 	width: 14px;
 	height: 14px;
 }
 .input-form.required label::after {
-	content: '*';
+	content: "*";
 	color: red;
 	padding: 4px;
 }
